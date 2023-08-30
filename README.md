@@ -1,6 +1,9 @@
 ## Proyecto
 ### Calculadora de conversiones, o conversión de unidades
 
+Humberto Mondragón García 
+A01711912
+
 Contexto:
 
 Un conversor de unidades es una herramienta que permite a los usuarios convertir cantidades de una unidad de medida a otra. Puede ser una herramienta muy útil en el ámbito educativo, ya que ayuda a los estudiantes a comprender y trabajar con diferentes sistemas de unidades y a realizar conversiones precisas entre ellos.
