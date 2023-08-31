@@ -14,7 +14,7 @@ a partir de las unidades que tengas.
 """
 def mili(tipo_unidad2):
     """
-funcion mili, se usa cunado el tipo de unidad que da el usuario empieza con ese prefijo
+funcion mili, se usa cuando el tipo de unidad que da el usuario empieza con ese prefijo
 recibe el segundo tipo de unidad, lo comprueba, y hace las operaciones necesarias para
 covertir la unidad, devuelve res
 @param tipo_unidad2, la compara para saber el segundo tipo de unidad
@@ -43,28 +43,28 @@ covertir la unidad, devuelve res
 #En caso de que las unidades que se vayan a convertir no sean prefijo mili, se compraran por centi
 def centi(tipo_unidad2):
     """
-funcion centi, se usa cunado el tipo de unidad que da el usuario empieza con ese prefijo
+funcion centi, se usa cuando el tipo de unidad que da el usuario empieza con ese prefijo
 recibe el segundo tipo de unidad, lo comprueba, y hace las operaciones necesarias para
 covertir la unidad, devuelve res
 @param tipo_unidad2, la compara para saber el segundo tipo de unidad
 @return res, el valor convertido
 """
-    if tipo_unidad2 == 1 :
+    if (tipo_unidad2 == 1) :
         res = usuario / 10
     else :
-        if tipo_unidad2 == 3 :
+        if (tipo_unidad2 == 3) :
             res = usuario * 10
         else :
-            if tipo_unidad2 == 4 :
+            if (tipo_unidad2 == 4) :
                 res = usuario * 100
             else :
-                if tipo_unidad2 == 5 :
+                if (tipo_unidad2 == 5) :
                     res = usuario * 1000
                 else :
-                    if tipo_unidad2 == 6 :
+                    if (tipo_unidad2 == 6) :
                         res = usuario * 10000
                     else :
-                        if tipo_unidad2 == 7 :
+                        if (tipo_unidad2 == 7) :
                             res = usuario * 100000
                         else :
                             print("Opción no válida")
@@ -75,7 +75,7 @@ covertir la unidad, devuelve res
 
 def deci(tipo_unidad2):
     """
-funcion deci, se usa cunado el tipo de unidad que da el usuario empieza con ese prefijo
+funcion deci, se usa cuando el tipo de unidad que da el usuario empieza con ese prefijo
 recibe el segundo tipo de unidad, lo comprueba, y hace las operaciones necesarias para
 covertir la unidad, devuelve res
 @param tipo_unidad2, la compara para saber el segundo tipo de unidad
@@ -109,28 +109,28 @@ covertir la unidad, devuelve res
 
 def sufijo(tipo_unidad2):
     """
-funcion sufijo, se usa cunado el tipo de unidad que da el usuario empieza con ese prefijo
+funcion sufijo, se usa cuando el tipo de unidad que da el usuario empieza con ese prefijo
 recibe el segundo tipo de unidad, lo comprueba, y hace las operaciones necesarias para
 covertir la unidad, devuelve res
 @param tipo_unidad2, la compara para saber el segundo tipo de unidad
 @return res, el valor convertido
 """
-    if tipo_unidad2 == 1 :
+    if (tipo_unidad2 == 1) :
         res = usuario / 1000
     else :
-        if tipo_unidad2 == 2 :
+        if (tipo_unidad2 == 2) :
             res = usuario / 100
         else :
-            if tipo_unidad2 == 3 :
+            if (tipo_unidad2 == 3) :
                 res = usuario * 10
             else :
-                if tipo_unidad2 == 5 :
+                if (tipo_unidad2 == 5) :
                     res = usuario * 10
                 else :
-                    if tipo_unidad2 == 6 :
+                    if (tipo_unidad2 == 6) :
                         res = usuario * 100
                     else :
-                        if tipo_unidad2 == 7 :
+                        if (tipo_unidad2 == 7) :
                             res = usuario * 1000
                         else :
                             print("Opción no válida")
@@ -140,28 +140,28 @@ covertir la unidad, devuelve res
 #En caso de que las unidades que se vayan a convertir no sean M,L , se comparan por prefijo deca
 def deca(tipo_unidad2):
     """
-funcion deca, se usa cunado el tipo de unidad que da el usuario empieza con ese prefijo
+funcion deca, se usa cuando el tipo de unidad que da el usuario empieza con ese prefijo
 recibe el segundo tipo de unidad, lo comprueba, y hace las operaciones necesarias para
 covertir la unidad, devuelve res
 @param tipo_unidad2, la compara para saber el segundo tipo de unidad
 @return res, el valor convertido
 """
-    if tipo_unidad2 == 1 :
+    if (tipo_unidad2 == 1) :
         res = usuario / 10000
     else :
-        if tipo_unidad2 == 2 :
+        if (tipo_unidad2 == 2) :
             res = usuario / 1000
         else :
-            if tipo_unidad2 == 3 :
+            if (tipo_unidad2 == 3) :
                 res = usuario / 100
             else :
-                if tipo_unidad2 == 4 :
+                if (tipo_unidad2 == 4) :
                     res = usuario / 10
                 else :
-                    if tipo_unidad2 == 6 :
+                    if (tipo_unidad2 == 6) :
                         res = usuario * 10
                     else :
-                        if tipo_unidad2 == 7 :
+                        if (tipo_unidad2 == 7) :
                             res = usuario * 100
                         else :
                             print("Opción no válida")
@@ -173,28 +173,28 @@ covertir la unidad, devuelve res
 
 def hecto(tipo_unidad2):
     """
-funcion hecto, se usa cunado el tipo de unidad que da el usuario empieza con ese prefijo
+funcion hecto, se usa cuando el tipo de unidad que da el usuario empieza con ese prefijo
 recibe el segundo tipo de unidad, lo comprueba, y hace las operaciones necesarias para
 covertir la unidad, devuelve res
 @param tipo_unidad2, la compara para saber el segundo tipo de unidad
 @return res, el valor convertido
 """
-    if tipo_unidad2 == 1 :
+    if (tipo_unidad2 == 1) :
         res = usuario / 100000
     else :
-        if tipo_unidad2 == 2 :
+        if (tipo_unidad2 == 2) :
             res = usuario / 10000
         else :
-            if tipo_unidad2 == 3 :
+            if (tipo_unidad2 == 3) :
                 res = usuario / 1000
             else :
-                if tipo_unidad2 == 4 :
+                if (tipo_unidad2 == 4) :
                     res = usuario / 100
                 else :
-                    if tipo_unidad2 == 5 :
+                    if (tipo_unidad2 == 5) :
                         res = usuario / 10
                     else :
-                        if tipo_unidad2 == 7 :
+                        if (tipo_unidad2 == 7) :
                             res = usuario * 10
                         else :
                             print("Opción no válida")
@@ -204,28 +204,28 @@ covertir la unidad, devuelve res
 #En caso de que las unidades que se vayan a convertir no sean prefijo hecto, se comparan por kilo
 def kilo(tipo_unidad2):
     """
-funcion kilo, se usa cunado el tipo de unidad que da el usuario empieza con ese prefijo
+funcion kilo, se usa cuando el tipo de unidad que da el usuario empieza con ese prefijo
 recibe el segundo tipo de unidad, lo comprueba, y hace las operaciones necesarias para
 covertir la unidad, devuelve res
 @param tipo_unidad2, la compara para saber el segundo tipo de unidad
 @return res, el valor convertido
 """
-    if tipo_unidad2 == 1 :
+    if (tipo_unidad2 == 1) :
         res = usuario / 1000000
     else :
-        if tipo_unidad2 == 2 :
+        if (tipo_unidad2 == 2) :
             res = usuario / 100000
         else :
-            if tipo_unidad2 == 3 :
+            if (tipo_unidad2 == 3) :
                 res = usuario / 10000
             else :
-                if tipo_unidad2 == 4 :
+                if (tipo_unidad2 == 4) :
                     res = usuario / 1000
                 else :
-                    if tipo_unidad2 == 5 :
+                    if (tipo_unidad2 == 5) :
                         res = usuario / 100
                     else :
-                        if tipo_unidad2 == 6 :
+                        if (tipo_unidad2 == 6) :
                             res = usuario / 10
                         else :
                             print("Opción no válida")
