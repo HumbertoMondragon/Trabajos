@@ -231,49 +231,53 @@ covertir la unidad, devuelve res
                             print("Opción no válida")
     return(res)
     
+"""
+Aquí terminan las funciones donde se convierten las unidades, y comienza el ciclo while, donde el usuario
+puede escoger cuantas unidades va a convertir, en cuanto el responda "No" con el numero 2, se detendrá el
+código
 
-
-#Pequeño menú donde el usuario esci¿oge las unidades (Volumen, longitud)
-print("1. Longitud \n 2. Volumen")
-unidad_general = int(input("Teclea el número de la opción que necesites: "))
-
-if (unidad_general == 1):
-    # Menu donde el usuario escoge las unidades que quiera convertir
-    print("1. Milímetros \n 2. Centímetros \n 3. Decímetros \n 4. Metros \n 5. Decámetro \n 6. Hectómetro \n 7. Kilómetro")
-    tipo_deseada = int(input("Teclea el número de la opcion que necesites: "))
+"""
+repeticion = 1
+while (repeticion != 2):
+    #Pequeño menú donde el usuario escoge las unidades (Volumen, longitud)
+    print("1. Longitud \n 2. Volumen")
+    unidad_general = int(input("Teclea el número de la opción que necesites: "))
+    if (unidad_general == 1):
+        # Menu donde el usuario escoge las unidades que quiera convertir
+        print("1. Milímetros \n 2. Centímetros \n 3. Decímetros \n 4. Metros \n 5. Decámetro \n 6. Hectómetro \n 7. Kilómetro")
+        tipo_deseada = int(input("Teclea el número de la opcion que necesites: "))
+        # Menu donde el usuario escoge las unidades que tenga
+        print("1. Milímetros \n 2. Centímetros \n 3. Decímetros \n 4. Metros \n 5. Decámetro \n 6. Hectómetro \n 7. Kilómetro")
+        tipo_actual = int(input("Teclea el número de la opcion que tengas a convertir: "))
+    elif (unidad_general == 2):
+        # Menu donde el usuario escoge las unidades que quiera convertir
+        print("1. Mililitros \n 2. Centilitros \n 3. Decilitros \n 4. Litros \n 5. Decalitros \n 6. Hectolitros \n 7. Kilolitros")
+        tipo_deseada = int(input("Teclea el número de la opcion que necesites: "))
     # Menu donde el usuario escoge las unidades que tenga
-    print("1. Milímetros \n 2. Centímetros \n 3. Decímetros \n 4. Metros \n 5. Decámetro \n 6. Hectómetro \n 7. Kilómetro")
-    tipo_actual = int(input("Teclea el número de la opcion que tengas a convertir: "))
-elif (unidad_general == 2):
-    # Menu donde el usuario escoge las unidades que quiera convertir
-    print("1. Mililitros \n 2. Centilitros \n 3. Decilitros \n 4. Litros \n 5. Decalitros \n 6. Hectolitros \n 7. Kilolitros")
-    tipo_deseada = int(input("Teclea el número de la opcion que necesites: "))
-    # Menu donde el usuario escoge las unidades que tenga
-    print("1. Mililitros \n 2. Centilitros \n 3. Decilitros \n 4. Litros \n 5. Decalitros \n 6. Hectolitros \n 7. Kilolitros")
-    tipo_actual = int(input("Teclea el número de la opcion que tengas a convertir: "))
-
-#Se le pide al usuario el valor a convertir 
-usuario = float(input("Introduce el valor a convertir: "))
-
-
-
-#Aquí se manda a llamar la funcion que sea necesaria a partir de el tipo de unidad
-if(tipo_deseada == 1):
-    print(mili(tipo_actual))
-elif(tipo_deseada == 2):
-    print(centi(tipo_actual))
-elif(tipo_deseada == 3):
-    print(deci(tipo_actual))
-elif(tipo_deseada == 4):
-    print(sufijo(tipo_actual))
-elif(tipo_deseada == 5):
-    print(deca(tipo_actual))
-elif(tipo_deseada == 6):
-    print(hecto(tipo_actual))
-elif(tipo_deseada == 7):
-    print(kilo(tipo_actual))
-else:
-    print("No válido")
+        print("1. Mililitros \n 2. Centilitros \n 3. Decilitros \n 4. Litros \n 5. Decalitros \n 6. Hectolitros \n 7. Kilolitros")
+        tipo_actual = int(input("Teclea el número de la opcion que tengas a convertir: "))
+    #Se le pide al usuario el valor a convertir
+    usuario = float(input("Introduce el valor a convertir: "))
+    #Aquí se manda a llamar la funcion que sea necesaria a partir de el tipo de unidad
+    if(tipo_deseada == 1):
+        print(mili(tipo_actual))
+    elif(tipo_deseada == 2):
+        print(centi(tipo_actual))
+    elif(tipo_deseada == 3):
+        print(deci(tipo_actual))
+    elif(tipo_deseada == 4):
+        print(sufijo(tipo_actual))
+    elif(tipo_deseada == 5):
+        print(deca(tipo_actual))
+    elif(tipo_deseada == 6):
+        print(hecto(tipo_actual))
+    elif(tipo_deseada == 7):
+        print(kilo(tipo_actual))
+    else:
+        print("No válido")
+    print("Quieres convertir otra unidad? \n 1. Si \n 2. No ")
+    repeticion = int(input())
+print("")
 
 
 
