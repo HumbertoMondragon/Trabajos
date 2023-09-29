@@ -237,8 +237,10 @@ puede escoger cuantas unidades va a convertir, en cuanto el responda "No" con el
 código
 
 """
-repeticion = 1
-while (repeticion != 2):
+repeticiones = int(input("Introduce la cantidad de unidades que vas a convertir: "))
+contador = 1
+valores = []
+while (contador <= repeticiones):
     #Pequeño menú donde el usuario escoge las unidades (Volumen, longitud)
     print("1. Longitud \n 2. Volumen")
     unidad_general = int(input("Teclea el número de la opción que necesites: "))
@@ -259,6 +261,7 @@ while (repeticion != 2):
     #Se le pide al usuario el valor a convertir
     usuario = float(input("Introduce el valor a convertir: "))
     #Aquí se manda a llamar la funcion que sea necesaria a partir de el tipo de unidad
+    """
     if(tipo_deseada == 1):
         print(mili(tipo_actual))
     elif(tipo_deseada == 2):
@@ -275,9 +278,29 @@ while (repeticion != 2):
         print(kilo(tipo_actual))
     else:
         print("No válido")
-    print("Quieres convertir otra unidad? \n 1. Si \n 2. No ")
-    repeticion = int(input())
-print("")
+    """
+    if(tipo_deseada == 1):
+        res = mili(tipo_actual)
+    elif(tipo_deseada == 2):
+        res = (centi(tipo_actual))
+    elif(tipo_deseada == 3):
+        res = (deci(tipo_actual))
+    elif(tipo_deseada == 4):
+        res = (sufijo(tipo_actual))
+    elif(tipo_deseada == 5):
+        res = (deca(tipo_actual))
+    elif(tipo_deseada == 6):
+        res = (hecto(tipo_actual))
+    elif(tipo_deseada == 7):
+        res = (kilo(tipo_actual))
+    else:
+        print("No válido")
+    
+    contador = contador + 1
+    print(res)
+    valores.append(res)
+    
+print("Los valores fueron\n",valores)
 
 
 
