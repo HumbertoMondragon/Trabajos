@@ -12,6 +12,13 @@ Este trabajo se trata de crear un coversor de unidades para así facilitar ciert
 El usuario indicará la unidad que el presenta, y a la que quiera convertirla.
 Se pueden convertir muchos tipos de datos tales como:
 
-Longitud, Masa, Volumen, Tiempo, Temperatura, Velocidad, Presión, Energía, Moneda, Área                                                                    
+Longitud, Masa, Volumen
+Citando al api de python
+    list.append(x)
+    Agrega un ítem al final de la lista. Equivale a a[len(a):] = [x].
+    https://docs.python.org/es/3/tutorial/datastructures.html
+    La funcion append agrega un elemento a la lista que anteriormente se creó,
+    con la sintaxis nombredelalista.append(elemento)
+
 
 
