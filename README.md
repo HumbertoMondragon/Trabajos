@@ -12,13 +12,14 @@ Este trabajo se trata de crear un coversor de unidades para así facilitar ciert
 El usuario indicará la unidad que el presenta, y a la que quiera convertirla.
 Se pueden convertir muchos tipos de datos tales como:
 
-Longitud, Masa, Volumen
-Citando al api de python
-    list.append(x)
-    Agrega un ítem al final de la lista. Equivale a a[len(a):] = [x].
-    https://docs.python.org/es/3/tutorial/datastructures.html
-    La funcion append agrega un elemento a la lista que anteriormente se creó,
-    con la sintaxis nombredelalista.append(elemento)
+## Correcciones
+Se corrige el límite de caracteres para cumplir con las reglas de PEP8, y se cita al API de python
 
+Longitud, Masa, Volumen
+## Citando al api de python
+    import random
+    Genera un número aleatorio entre x y x1 incluyendo ambos
+   https://docs.python.org/3/library/random.html
+   Con la sintaxis random.randint(x,x1)
 
 
